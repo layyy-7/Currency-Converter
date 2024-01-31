@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apps.com</title>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container1">
+        <h2>
+            <!--The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file
+            Whitespace inside this element is displayed as written-->
+            <pre>CURRENCY  CONVERTER</pre>
+        </h2>
+
+        <!--The <form> HTML element represents a document section containing interactive controls for submitting information-->
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+
+                <!--<input> HTML element is used to create interactive controls for web-based forms in order to accept data from user
+                The values for input type attribute include button, checkbox, color, date, datetime-local, email, file , hidden, image, month, number, password, radio, range, reset , search, submit, tel, text, time, url and week-->
+                
+                <!--When value attribute is specified in the HTML, it will be the initial value
+                How an <input> works varies considerably depending on the value of its type attribute
+                If this attribute is not specified, the default type adopted is text-->
+                
+                <!--<input> elements of type text create basic single-line text fields
+                The value attribute is a string that contains the current value of the text entered into the text field-->
+                <input value="1" type="text">
+            </div>
+
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+
+                    <div class="container2">
+                        <img src="https://flagsapi.com/US/shiny/64.png">
+
+                        <!--The <select> HTML element represents a control that provides a menu of options
+                        The name attribute is used to specify the name of the control-->
+                        <!--The name attribute specifies a name for an HTML element
+                        This name attribute can be used to reference the element in a JavaScript-->
+                        
+                        <!--The <option> HTML element is used to define item contained in a <select>, an <optgroup>, or a <datalist> element
+                        As such, <option> can represent menu items in popups and other lists of items in an HTML document-->
+                        <!--Each <option> element should have a value attribute containing the data value to submit to the server when that option is selected
+                        If no value attribute is included, the value defaults to the text contained inside the element
+                        You can include a selected attribute on an <option> element to make it selected by default when page first loads-->
+                        <select name="from"></select>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-right-left"></i>
+
+                <div class="to">
+                    <p>To</p>
+
+                    <div class="container2">
+                        <img src="https://flagsapi.com/IN/shiny/64.png">
+                        <select name="to"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg"></div>
+
+            <!--The values for type attribute of button can be button, submit and reset
+            The default value of type attribute of button is submit if the attribute is not specified or if the attribute is empty or invalid value for buttons associated with a <form>
+            If your buttons are not for submitting form data to a server, be sure to set their type attribute to button-->
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <!--very imp to link codes.js before app.js or else countryList will not be accessible in app.js-->
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

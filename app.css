@@ -1,0 +1,120 @@
+/*writing every dimension in relative units for responsive web page*/
+/*all dimensions relating to height are written in vh*/
+/*and every dimension other than that is written in vmin*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*The viewport is the user's visible area of a web page*/
+/*100vh means the body will occupy the whole height of the screen*/
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4E4B5C;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 3vmin;
+}
+
+p
+{
+    font-size: 2.5vmin;
+}
+
+/*rem (short for “root-em”) units dictate an element’s font size relative to the size of the root element*/
+/*By default, most browsers use a font size value of 16px*/
+/*So, if the root element is 16px, an element with the value 1rem will also equal 16px*/
+.container1
+{
+    background-color: #BDADEA;
+    padding: 5vmin;
+    border-radius: 2vmin;
+    height: 50vh;
+    width: 50vmin;
+}
+
+form
+{
+    margin-top: 5vh;
+}
+
+/*The outline is drawn outside the element's border, and may overlap other content
+Also, the outline is NOT a part of the element's dimensions 
+The element's total width and height is not affected by the width of the outline*/
+
+/*% is relative to the parent element*/
+/*selecting all select,button and input tags in the form*/
+form select,button,input
+{
+    width: 50vmin;
+    border-radius: 2vmin;
+    border: none;
+    outline: none;
+    height: 4vh;
+}
+
+form input
+{
+    font-size: 2vmin;
+    width: 49vmin;
+    padding-left: 1vmin;
+    border: 0.5vmin solid #4E4B5C;
+}
+
+.dropdown
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.dropdown i
+{
+    font-size: 2vmin;
+    margin-top: 3vmin;
+}
+
+.container2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vmin;
+    background-color: white;
+    border-radius: 2vmin;
+    border: 0.5vmin solid #4E4B5C;
+    padding-left: 1vmin;
+}
+
+.container2 img
+{
+    width: 4vmin;
+}
+
+.container2 select
+{
+    font-size: 2vmin;
+}
+
+.msg
+{
+    margin: 5vh 0 5vh 0;
+    font-size: 2.5vmin;
+}
+
+button
+{
+    height: 5vh;
+    font-size: 2vh;
+    border: 0.5vmin solid #4E4B5C;
+}
